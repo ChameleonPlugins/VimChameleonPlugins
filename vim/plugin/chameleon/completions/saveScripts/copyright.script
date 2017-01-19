@@ -1,0 +1,31 @@
+"snippet copyright "Create Copyright SCRIPT" b
+:let YEAR=strftime("%Y")
+:execute "normal! mm1Gj"
+if getline('.') =~? "Copyright"
+    if ! (getline('.') =~? YEAR)
+        echom "Change needed..."
+"        if getline('.') =~? "-"
+"            echom "... has -"
+"        else
+            :let choice = confirm("Update copyright with " . YEAR . " before saving?",
+\ "&Yes\n\&No")
+            :echom "choice=" . choice
+            if choice ==? 1
+                :execute "normal! /Copyright\<CR>WWhi," . YEAR
+                echom "Added " . YEAR . " to Copyright notice..."
+            endif
+            if ! (choice ==? 0)
+                :w
+            endif
+"        endif
+    endif
+endif
+:execute "normal! `m"
+"endsnippet
+"synonyms
+"copyright
+"create copyright
+"file copyright
+"file heading
+"endsynonyms
+

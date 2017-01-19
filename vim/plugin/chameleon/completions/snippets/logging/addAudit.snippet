@@ -1,0 +1,20 @@
+snippet aa "Add Audit Log section" b
+    - centralized_logging:
+        enabled: false
+        format: json
+      files:
+      - /var/audit/DIRECTORY/LOFILENAME.log
+      log_rotate:
+      - daily
+      - compress
+      - missingok
+      - copytruncate   # Comment this out if postrotate is used
+      - maxsize 45M
+      - rotate 7      # 7   default
+      - notifempty
+      - create 644 USER GROUP
+endsnippet
+synonyms
+add audit log section
+make audit log section
+endsynonyms

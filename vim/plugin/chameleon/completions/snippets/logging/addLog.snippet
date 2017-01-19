@@ -1,0 +1,22 @@
+snippet al "add logrotate section" b
+    - centralized_logging:
+        enabled: false
+        format: json
+      files:
+      - /var/log/DIRECTORY/LOFILENAME.log
+      log_rotate:
+      - daily
+      - compress
+      - missingok
+      - copytruncate   # Comment this out if postrotate is used
+      - maxsize 45M
+      - rotate 7      # 7   default
+      - notifempty
+      - create 644 USER GROUP
+endsnippet
+synonyms
+add a logrotate section
+add logrotate section
+create logrotate section
+make logrotate section
+endsynonyms

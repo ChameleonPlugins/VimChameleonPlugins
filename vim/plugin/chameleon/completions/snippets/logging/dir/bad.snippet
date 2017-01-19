@@ -1,0 +1,24 @@
+snippet be "bad examples" b
+
+# LONG LINE:
+# 34567890123456789212345678941234567895123456789612345678971234567898123456789912345
+# Spaces at end of this line    
+
+    - centralized_logging:
+        enabled: false
+        format: json
+      files:
+      - /var/log/DIRECTORY/FILENAME.log
+      log_rotate:
+       - daily           # Odd # of indentation spaces...
+      - compress
+      - missingok
+      - copytruncate   # Comment this out if postrotate is used
+      - maxsize 45M
+      - rotate 7       # 7   default
+      - notifempty
+      - create 644 USER GROUP
+endsnippet
+synonyms
+bad examples
+endsynonyms

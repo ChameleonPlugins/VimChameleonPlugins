@@ -1,0 +1,25 @@
+*helpchameleon.txt*	For Vim version 7.4.774	Last change: 2016 September 13
+
+
+		  CHAMELEON HELP
+
+
+Help on using Chameleon					*helpchameleon*
+
+1. Usage .......................... |ChameleonUsage|
+2. License ........................ |ChameleonLicense|
+
+==============================================================================
+1. Usage					*ChameleonUsage*
+
+		            	*chameleon* *:chameleon*
+:c[hameleon]
+:chameleon              Chameleon help goes here...
+==============================================================================
+2. License					*ChameleonLicense*
+
+For ease of use, a Vim help file for a plugin should follow the format of the
+standard Vim help files.  If you are writing a new help file it's best to copy
+one of the existing files and use it as a template.
+
+ vim:tw=78:ts=8:ft=help:norl:

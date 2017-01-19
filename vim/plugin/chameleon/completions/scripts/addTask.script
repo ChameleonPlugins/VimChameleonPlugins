@@ -1,0 +1,12 @@
+"snippet addTask "add Task SCRIPT" b
+:let DIR=expand("%:p:h:h:t")
+:let FILE=expand("%:r")
+:execute "normal! i
+\- name: " . DIR . " | " . FILE . " | "
+"endsnippet
+"synonyms
+"add task
+"create task
+"make task
+"task
+"endsynonyms

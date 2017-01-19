@@ -1,0 +1,27 @@
+snippet ac "add consumes" b
+      - service-name: #FND-RMQ#
+        relationship-vars:
+          - name: accounts
+            vars:
+                logging:
+                - name: username
+                  value: guest
+                - name: password
+                  value: '%random-password%'
+                  properties:
+                    min-length: 8
+                    max-length: 12
+                    key-name: rmq_service_password
+                  is-private: "true"
+
+    commands:
+      configure: logging-configure.yml
+      deploy: logging-deploy.yml
+      start: logging-start.yml
+      stop: logging-stop.yml
+endsnippet
+synonyms
+add consumes
+create consumes
+make consumes
+endsynonyms

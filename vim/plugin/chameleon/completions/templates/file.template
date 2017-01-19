@@ -1,0 +1,16 @@
+//\\ //// ==> completion hint (1 line):
+# say X to X file
+//\\ //// code completion entries (1+ lines):
+say X to X file
+//\\ //// Replacement text (1+ lines):
+print "X1" to file X2
+print "X1" to file X2
+//\\ //// Defaults for X if needed (e.g. X1=3) (1+ lines):
+X1=Hello World!
+X2="test.txt"
+//\\ //// Help/documentation (1+ lines):
+write a string to a file
+//\\ //// Tool tip (1 line):
+write a string to a file...
+//\\
+

@@ -1,0 +1,28 @@
+"snippet copyright "Create Copyright SCRIPT" b
+:let YEAR=strftime("%Y")
+:execute "normal! i
+\#\<CR>
+\# (c) Copyright " . YEAR . " Hewlett Packard Enterprise Development LP\<CR>
+\#\<CR>
+\# Licensed under the Apache License, Version 2.0 (the \"License\"); you may\<CR>
+\# not use this file except in compliance with the License. You may obtain\<CR>
+\# a copy of the License at\<CR>
+\#\<CR>
+\# http://www.apache.org/licenses/LICENSE-2.0\<CR>
+\#\<CR>
+\# Unless required by applicable law or agreed to in writing, software\<CR>
+\# distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\<CR>
+\# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the\<CR>
+\# License for the specific language governing permissions and limitations\<CR>
+\# under the License.\<CR>
+\#\<CR>
+\---\<CR>
+\\<CR>
+\"
+"endsnippet
+"synonyms
+"copyright
+"create copyright
+"file copyright
+"file heading
+"endsynonyms

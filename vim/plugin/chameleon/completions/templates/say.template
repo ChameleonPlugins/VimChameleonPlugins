@@ -1,0 +1,17 @@
+//\\ //// ==> completion hint (1 line):
+# say X
+//\\ //// code completion entries (1+ lines):
+this is a test
+say X to the user
+say y to the user
+//\\ //// Replacement text (1+ lines):
+print "X1"
+print "X1"
+//\\ //// Defaults for X if needed (e.g. X1=3) (1+ lines):
+X1=Hello World!
+//\\ //// Help/documentation (1+ lines):
+help test
+//\\ //// Tool tip (1 line):
+tool tip for test...
+//\\
+
