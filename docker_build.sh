@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t cloud.docker.com/chameleonplugins/chameleon-vim-plugins:latest .
+docker build -t chameleonplugins/chameleon-vim-plugins:latest .
