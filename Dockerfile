@@ -15,6 +15,8 @@ FROM jare/vim-pathogen:latest
 
 #If color doesn't show up, you may need to add this in your environment
 #ENV TERM=xterm-256color
+#ansi needed to work on Docker Quickstart Terminal for Windows
+ENV TERM=ansi
 ENV DISABLE=""
 
 COPY run /usr/local/bin/
